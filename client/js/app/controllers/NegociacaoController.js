@@ -34,7 +34,6 @@ class NegociacaoController {
         this._mensagem = new Mensagem();
         this._mensagemView = new MensagemView($('#mensagemView'));
         this._mensagemView.update(this._mensagem);
-
     }
 
     adiciona(event) {
@@ -52,10 +51,8 @@ class NegociacaoController {
 
         this._listaNegociacoes.esvazia();
 
-        this._mensagem.texto = 'Negociações pagadas com sucesso';
+        this._mensagem.texto = 'Negociações apagadas com sucesso';
         this._mensagemView.update(this._mensagem);
-
-        this._limpaFormulario();
     }
 
     _criaNegociacao() {
